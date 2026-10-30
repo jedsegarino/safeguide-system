@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login – SafeGuide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <main class="auth-page">
+    <div class="auth-card">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="#0f9d58"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm4 10h-3v3h-2v-3H8v-2h3V7h2v3h3v2Z"/></svg>
+        SafeGuide
+      </div>
+      <h1>Welcome Back!</h1>
+      <p class="sub">Login to your account</p>
+
+      <div id="msg" class="alert hidden" role="alert"></div>
+
+      <form id="loginForm" novalidate>
+        <div class="field"><label for="username">Username</label><input id="username" name="username" placeholder="Enter your username" autocomplete="username" required></div>
+        <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required></div>
+        <button class="btn btn-block" type="submit">Login</button>
+      </form>
+      <p class="auth-foot">Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

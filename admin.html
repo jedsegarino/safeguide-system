@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin – SafeGuide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="#3ddc97"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm4 10h-3v3h-2v-3H8v-2h3V7h2v3h3v2Z"/></svg>
+        SafeGuide <span class="tag">Admin</span>
+      </div>
+      <button data-view="home" class="active">📊 Dashboard</button>
+      <button data-view="users">👥 Users</button>
+      <button data-view="guides">🩹 First Aid Guides</button>
+      <button data-view="procedures">⚠️ Emergency Procedures</button>
+      <div class="spacer"></div>
+      <button class="logout-btn">🚪 Logout</button>
+    </aside>
+
+    <div class="main">
+      <header class="header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        <span class="who"><strong id="userName">Admin</strong></span>
+        <button class="btn btn-ghost btn-sm logout-btn">Logout</button>
+      </header>
+      <main class="content" id="view" aria-live="polite">Loading…</main>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
